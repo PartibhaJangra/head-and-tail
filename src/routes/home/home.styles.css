@@ -1,0 +1,6 @@
+.links-container {
+  float: left;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
