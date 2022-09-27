@@ -27,9 +27,10 @@ const HeadAndTail = function () {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsError(false);
     if (selectElement.current.value === "Select Value") {
       return setIsError(true);
+    } else {
+      setIsError(false);
     }
     dispatch(setCurrentSelection(currSelection, selectionArray));
     selectElement.current.selectedIndex = 0;
